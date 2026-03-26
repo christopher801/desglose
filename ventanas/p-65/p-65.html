@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VENTANA P-65 · DESGLOSE</title>
+    <link rel="stylesheet" href="p-65.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="nav-bar">
+                <a href="../../index.html" class="btn-back">← VOLVER</a>
+                
+            </div>
+            <div>
+                <h1>VENTANA P-65</h1>
+            </div>
+        </header>
+
+        <div class="input-card">
+            <div class="input-grid">
+                <div class="input-group">
+                    <label for="hueco">HUECO #</label>
+                    <input type="number" id="hueco" min="1" value="1">
+                </div>
+                <div class="input-group">
+                    <label for="ancho">ANCHO</label>
+                    <input type="text" id="ancho" placeholder="ej: 91 1/2" value="">
+                </div>
+                <div class="input-group">
+                    <label for="alto">ALTO</label>
+                    <input type="text" id="alto" placeholder="ej: 74 7/8" value="">
+                </div>
+                <div class="input-group">
+                    <label for="hojas">HOJAS</label>
+                    <select id="hojas">
+                        <option value="2">2 HOJAS</option>
+                        <option value="3">3 HOJAS</option>
+                        <option value="4">4 HOJAS</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="button-bar">
+                <button class="btn btn-primary" id="agregarBtn">➕ AGREGAR</button>
+                <button class="btn btn-secondary" id="resetBtn">⟲ RESET</button>
+                <button class="btn btn-secondary" id="printBtn">📄GUARDAR</button>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <div class="table-title">VENTANA P-65</div>
+            <table id="cuttingTable">
+                <thead>
+                    <tr>
+                        <th rowspan="2">hueco</th>
+                        <th rowspan="2">ancho</th>
+                        <th rowspan="2">alto</th>
+                        <th rowspan="2">hojas</th>
+                        <th colspan="2">DE LA HOJAS</th>
+                        <th colspan="2">DEL MARCO</th>
+                        <th colspan="2">VIDRIO</th>
+                        <th rowspan="2">V. MEDIO</th>
+                    </tr>
+                    <tr>
+                        <th>Cab-alf</th>
+                        <th>jambas</th>
+                        <th>Cab-riel</th>
+                        <th>Lat-marco</th>
+                        <th>ancho</th>
+                        <th>alto</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr class="empty-row"><td colspan="11">— Antre mezi yo epi klike AGREGAR —</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="print-footer" id="printFooter"></div>
+    </div>
+
+    <script type="module" src="p-65.js"></script>
+</body>
+</html>

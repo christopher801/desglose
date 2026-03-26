@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUERTA COMERCIAL · DESGLOSE</title>
+    <link rel="stylesheet" href="puerta-comercial.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="nav-bar">
+                <a href="../../index.html" class="btn-back">← VOLVER</a>
+                
+            </div>
+            <div>
+                <h1>PUERTA COMERCIAL</h1>
+            </div>
+        </header>
+
+        <div class="input-card">
+            <div class="input-grid">
+                <div class="input-group">
+                    <label for="hueco">HUECO #</label>
+                    <input type="number" id="hueco" min="1" value="1">
+                </div>
+                <div class="input-group">
+                    <label for="ancho">ANCHO</label>
+                    <input type="text" id="ancho" placeholder="ej: 39 7/8" value="">
+                </div>
+                <div class="input-group">
+                    <label for="alto">ALTO</label>
+                    <input type="text" id="alto" placeholder="ej: 85 3/4" value="">
+                </div>
+                <!-- HOJAS selector removed - always simple -->
+            </div>
+            
+            <div class="button-bar">
+                <button class="btn btn-primary" id="agregarBtn">➕ AGREGAR</button>
+                <button class="btn btn-secondary" id="resetBtn">⟲ RESET</button>
+                <button class="btn btn-secondary" id="printBtn">📄GUARDAR</button>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <div class="table-title">PUERTA COMERCIAL SIMPLE</div>
+            <table id="cuttingTable">
+                <thead>
+                    <tr>
+                        <th>hueco</th>
+                        <th>ancho</th>
+                        <th>alto</th>
+                        <th colspan="2">HOJA</th>
+                        <th colspan="2">MARCO</th>
+                        <th colspan="2">VIDRIO</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th>Cab-alf</th>
+                        <th>jambas</th>
+                        <th>Cab-marco</th>
+                        <th>Lat-marco</th>
+                        <th>ancho</th>
+                        <th>alto</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr class="empty-row"><td colspan="9">— Antre mezi yo epi klike AGREGAR —</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="print-footer" id="printFooter"></div>
+    </div>
+
+    <script type="module" src="puerta-comercial.js"></script>
+</body>
+</html>
