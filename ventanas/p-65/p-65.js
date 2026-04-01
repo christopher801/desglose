@@ -21,8 +21,8 @@ const P65 = {
                 { tipo: 'HOJA', pieza: 'JAMBAS', medida: alto - (2 + 1/8) },
                 { tipo: 'MARCO', pieza: 'CAB-RIEL', medida: ancho - (1 + 3/8) },
                 { tipo: 'MARCO', pieza: 'LATERAL', medida: alto - (1/8) },
-                { tipo: 'VIDRIO', pieza: 'ANCHO LATERAL', medida: (ancho / 3) - (2 + 7/16) },
-                { tipo: 'VIDRIO', pieza: 'ANCHO MEDIO', medida: (ancho / 3) - (2 + 12/16) },
+                { tipo: 'VIDRIO', pieza: 'ANCHO LATERAL', medida: (ancho / 3) - (2 + 6/16) },
+                { tipo: 'VIDRIO', pieza: 'ANCHO MEDIO', medida: (ancho / 3) - (2 + 11/16) },
                 { tipo: 'VIDRIO', pieza: 'ALTO', medida: alto - (4 + 15/16) }
             );
         } else if (hojas === 4) {

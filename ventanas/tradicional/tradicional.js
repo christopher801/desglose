@@ -8,8 +8,8 @@ const Tradicional = {
         
         if (hojas === 2) {
             parts.push(
-                { tipo: 'HOJA', pieza: 'CAB-ALF', medida: (ancho / 2) - (5/16) },
-                { tipo: 'HOJA', pieza: 'JAMBAS', medida: alto - (11/16) },
+                { tipo: 'HOJA', pieza: 'CAB-ALF', medida: (ancho / 2) - (4/16) },
+                { tipo: 'HOJA', pieza: 'JAMBAS', medida: alto - (12/16) },
                 { tipo: 'MARCO', pieza: 'CAB-RIEL', medida: ancho - (2/16) },
                 { tipo: 'MARCO', pieza: 'LATERAL', medida: alto - (1/2) },
                 { tipo: 'VIDRIO', pieza: 'ANCHO', medida: (ancho / 2) - (2 + 1/8) },
@@ -18,21 +18,21 @@ const Tradicional = {
         } else if (hojas === 3) {
             parts.push(
                 { tipo: 'HOJA', pieza: 'CAB-ALF', medida: (ancho / 3) + (1/16) },
-                { tipo: 'HOJA', pieza: 'JAMBAS', medida: alto - (10/16) },
+                { tipo: 'HOJA', pieza: 'JAMBAS', medida: alto - (12/16) },
                 { tipo: 'MARCO', pieza: 'CAB-RIEL', medida: ancho - (2/16) },
                 { tipo: 'MARCO', pieza: 'LATERAL', medida: alto - (1/2) },
-                { tipo: 'VIDRIO', pieza: 'ANCHO LATERAL', medida: (ancho / 3) - (1 + 7/8) },
-                { tipo: 'VIDRIO', pieza: 'ANCHO MEDIO', medida: (ancho / 3) - 1  },
+                { tipo: 'VIDRIO', pieza: 'ANCHO LATERAL', medida: (ancho / 3) - (1 + 12/16) },
+                { tipo: 'VIDRIO', pieza: 'ANCHO MEDIO', medida: (ancho / 3) - (15/16)  },
                 { tipo: 'VIDRIO', pieza: 'ALTO', medida: alto - (3 + 13/16) }
             );
         } else if (hojas === 4) {
             parts.push(
-                { tipo: 'HOJA', pieza: 'CAB-ALF', medida: (ancho / 4) - (1/8) },
-                { tipo: 'HOJA', pieza: 'JAMBAS', medida: alto - (7/8) },
+                { tipo: 'HOJA', pieza: 'CAB-ALF', medida: (ancho / 4) - (3/16) },
+                { tipo: 'HOJA', pieza: 'JAMBAS', medida: alto - (12/16) },
                 { tipo: 'MARCO', pieza: 'CAB-RIEL', medida: ancho - (1/8) },
                 { tipo: 'MARCO', pieza: 'LATERAL', medida: alto - (1/2) },
-                { tipo: 'VIDRIO', pieza: 'ANCHO', medida: (ancho / 4) - 2 },
-                { tipo: 'VIDRIO', pieza: 'ALTO', medida: alto - (4 + 1/8) }
+                { tipo: 'VIDRIO', pieza: 'ANCHO', medida: (ancho / 4) - (2 + 1/16) },
+                { tipo: 'VIDRIO', pieza: 'ALTO', medida: alto - (3 + 13/16) }
             );
         }
         
