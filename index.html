@@ -9,42 +9,194 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="splash-container">
-        <div class="splash-card">
-            <h1>DESGLOSE VENTANAS</h1>
-            <h2>SISTEMA DE CÁLCULO PROFESIONAL</h2>
-            
-            <div class="product-grid">
-                <a href="ventanas/p-92/p-92.html" class="product-card">
-                    <div class="product-icon">🪟</div>
-                    <div class="product-title">VENTANA P-92</div>
-                    <div class="product-desc">2, 3 y 4 hojas</div>
-                </a>
-                
-                <a href="ventanas/p-65/p-65.html" class="product-card">
-                    <div class="product-icon">🪟</div>
-                    <div class="product-title">VENTANA P-65</div>
-                    <div class="product-desc">2, 3 y 4 hojas</div>
-                </a>
-                
-                <a href="ventanas/tradicional/tradicional.html" class="product-card">
-                    <div class="product-icon">🪟</div>
-                    <div class="product-title">VENTANA TRADICIONAL</div>
-                    <div class="product-desc">2, 3 y 4 hojas</div>
-                </a>
-                
-                <a href="puertas/puerta-comercial/puerta-comercial.html" class="product-card">
-                    <div class="product-icon">🚪</div>
-                    <div class="product-title">PUERTA COMERCIAL</div>
-                    <div class="product-desc">Simple</div>
-                </a>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">🪟</div>
+                <div class="logo-text">DESGLOSE <span>PRO</span></div>
             </div>
-            
-            <div class="splash-footer">
-                <p>KREYE PA CHRISTOPHER</p>
-                <p>✧ 2026 ✧</p>
+            <div class="nav-links">
+                <a href="#features">Características</a>
+                <a href="#comparison">Comparativa</a>
             </div>
         </div>
+    </header>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>Desglose <span>Profesional</span> de ventanas y puertas</h1>
+            <p> Calcula ventanas P-92, P-65, Tradicional y Puertas Comerciales.</p>
+        </div>
+
+        <!-- Warning Banner -->
+        <div class="warning-banner">
+            <p>⚠️ <strong>¡Importante!</strong> La versión V1 ya no recibe actualizaciones. Para acceder a las nuevas funcionalidades y soporte, utiliza la <strong>VERSIÓN V2</strong>.</p>
+        </div>
+
+        <!-- Version Cards -->
+        <div class="version-grid">
+            <!-- V1 Card -->
+            <div class="card card-v1">
+                <div class="card-header">
+                    <h2>Versión 1.0</h2>
+                    <span class="badge-v1">Legacy</span>
+                </div>
+                <p class="version">📅 Lanzamiento: 2025</p>
+                <p>Versión original del sistema. Funciona localmente sin autenticación.</p>
+                <ul class="feature-list">
+                    <li>Ventana P-92</li>
+                    <li>Ventana P-65</li>
+                    <li>Ventana Tradicional</li>
+                    <li>Puerta Comercial Simple</li>
+                    <li>Exportación a PDF</li>
+                    <li>Impresión directa</li>
+                </ul>
+                <div style="margin-top: 1rem;">
+                    <a href="https://desglose.netlify.app" class="btn btn-secondary" style="width: 100%;">Ir a V1 →</a>
+                </div>
+            </div>
+
+            <!-- V2 Card -->
+            <div class="card card-v2">
+                <div class="card-header">
+                    <h2>Versión 2.0</h2>
+                    <span class="badge-v2">🔥 NUEVO</span>
+                </div>
+                <p class="version">📅 Lanzamiento: 2026</p>
+                <p>Versión SaaS profesional con autenticación y panel de administración.</p>
+                <ul class="feature-list">
+                    <li>Todas las funciones de V1</li>
+                    <li>✅ Sistema de usuarios (Login/Register)</li>
+                    <li>✅ Panel de Administración</li>
+                    <li>✅ Control de acceso (Activar/Bloquear usuarios)</li>
+                    <li>✅ Base de datos en Firebase</li>
+                    <li>✅ Diseño responsive mejorado</li>
+                    <li>✅ Soporte continuo</li>
+                </ul>
+                <div style="margin-top: 1rem;">
+                    <a href="https://desglose-pro.vercel.app" class="btn btn-primary" style="width: 100%;">🚀 Ir a V2 →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="features-section" id="features">
+            <h2>✨ Características de V2</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h3>Autenticación Segura</h3>
+                    <p>Registro e inicio de sesión con Firebase Auth. Tu información está protegida.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👑</div>
+                    <h3>Panel de Administración</h3>
+                    <p>Control total sobre los usuarios. Activa o bloquea cuentas fácilmente.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Base de Datos en Tiempo Real</h3>
+                    <p>Tus cálculos y proyectos guardados en Firestore.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Diseño Responsive</h3>
+                    <p>Funciona perfectamente en móvil, tablet y escritorio.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🖨️</div>
+                    <h3>Impresión Profesional</h3>
+                    <p>Genera desgloses listos para taller con formato profesional.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📄</div>
+                    <h3>Exportación a PDF</h3>
+                    <p>Exporta tus cálculos a PDF con un solo clic.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comparison Table -->
+        <div class="comparison" id="comparison">
+            <h2>📊 Comparativa V1 vs V2</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Funcionalidad</th>
+                        <th>V1</th>
+                        <th>V2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Cálculo P-92</td><td class="check">✅</td><td class="check">✅</td></tr>
+                    <tr><td>Cálculo P-65</td><td class="check">✅</td><td class="check">✅</td></tr>
+                    <tr><td>Cálculo Tradicional</td><td class="check">✅</td><td class="check">✅</td></tr>
+                    <tr><td>Cálculo Puerta Comercial</td><td class="check">✅</td><td class="check">✅</td></tr>
+                    <tr><td>Exportación PDF</td><td class="check">✅</td><td class="check">✅</td></tr>
+                    <tr><td>Impresión</td><td class="check">✅</td><td class="check">✅</td></tr>
+                    <tr><td>Sistema de Usuarios</td><td class="x">❌</td><td class="check">✅</td></tr>
+                    <tr><td>Panel de Administración</td><td class="x">❌</td><td class="check">✅</td></tr>
+                    <tr><td>Base de Datos</td><td class="x">❌</td><td class="check">✅</td></tr>
+                    <tr><td>Soporte Multi-usuario</td><td class="x">❌</td><td class="check">✅</td></tr>
+                    <tr><td>Actualizaciones</td><td class="x">❌</td><td class="check">✅</td></tr>
+                    <tr><td>Diseño Responsive</td><td class="check">✅</td><td class="check">✅</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta" id="v2">
+            <h2>🚀 Comienza con la Versión 2</h2>
+            <p>Regístrate gratis y accede a todas las funcionalidades profesionales.</p>
+            <div class="cta-buttons">
+                <a href="https://desglose-pro.vercel.app/register" class="btn btn-primary btn-large">📝 Registrarse</a>
+                <a href="https://desglose-pro.vercel.app/login" class="btn btn-secondary btn-large">🔑 Iniciar Sesión</a>
+            </div>
+        </div>
+
+        <!-- Cómo funciona -->
+        <div class="features-section">
+            <h2>📖 ¿Cómo funciona V2?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">1️⃣</div>
+                    <h3>Regístrate</h3>
+                    <p>Crea tu cuenta con email y contraseña.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">2️⃣</div>
+                    <h3>Espera Activación</h3>
+                    <p>El administrador activará tu cuenta (por seguridad).</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">3️⃣</div>
+                    <h3>Selecciona Sistema</h3>
+                    <p>Elige entre P-92, P-65, Tradicional o Puerta.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">4️⃣</div>
+                    <h3>Ingresa Medidas</h3>
+                    <p>ANCHO y ALTO (ej: 91 1/2, 74 7/8).</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">5️⃣</div>
+                    <h3>Agrega al Desglose</h3>
+                    <p>Haz clic en AGREGAR para ver los cálculos.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">6️⃣</div>
+                    <h3>Exporta o Imprime</h3>
+                    <p>Genera PDF o imprime el desglose profesional.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>© 2026 Desglose Pro - Desarrollado por Christopher</p>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

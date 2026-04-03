@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+}
+
+body {
+    background: linear-gradient(145deg, #2b3a4a 0%, #1d2b38 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-back {
+    background: #ecf0f3;
+    color: #1e2b3c;
+    text-decoration: none;
+    padding: 0.5rem 1.25rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    box-shadow: 4px 4px 8px #b8bec9, -4px -4px 8px #ffffff;
+    transition: all 0.2s;
+}
+
+.btn-back:hover {
+    background: #e1e8f0;
+    transform: translateY(-2px);
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #1e2b3c;
+}
+
+.badge {
+    background: #1e2b3c;
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.8rem;
+    border-radius: 50px;
+    margin-left: 0.5rem;
+}
+
+.subheader {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+    color: #2c3e50;
+    background: #e9ecef;
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.subheader span {
+    flex: 1;
+    min-width: 150px;
+}
+
+.input-card {
+    background: #f8fafd;
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: inset 0 2px 4px rgba(255,255,255,0.8), 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.input-group label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.input-group input,
+.input-group select {
+    padding: 0.7rem 1rem;
+    border: none;
+    background: white;
+    border-radius: 14px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #1a2634;
+    box-shadow: 4px 4px 8px #d9dde2, -4px -4px 8px #ffffff;
+}
+
+.button-bar {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 1rem;
+}
+
+.btn {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    box-shadow: 4px 4px 8px #d9dde2, -4px -4px 8px #ffffff;
+}
+
+.btn-primary {
+    background: #1e3b5c;
+    color: white;
+}
+
+.btn-secondary {
+    background: #ecf0f3;
+    color: #2c3e50;
+}
+
+.btn-accent {
+    background: #2c3e50;
+    color: white;
+}
+
+.table-container {
+    background: white;
+    border-radius: 20px;
+    padding: 1rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1e2b3c;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+    min-width: 700px;
+    border: 1px solid #cbd5e1;
+}
+
+th {
+    text-align: center;
+    padding: 0.6rem 0.4rem;
+    background: #e2e8f0;
+    color: #1e2b3c;
+    font-weight: 600;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    border: 1px solid #94a3b8;
+}
+
+td {
+    padding: 0.5rem 0.3rem;
+    border: 1px solid #cbd5e1;
+    font-family: 'Courier New', monospace;
+    font-weight: 500;
+    color: #0f1a24;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.empty-row td {
+    text-align: center;
+    color: #94a3b8;
+    font-style: italic;
+    padding: 2rem;
+    font-family: inherit;
+}
+
+.print-footer {
+    margin-top: 1rem;
+    color: #64748b;
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 0.5rem;
+    }
+    
+    .container {
+        padding: 1rem;
+        border-radius: 20px;
+    }
+    
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    header h1 {
+        font-size: 1.2rem;
+    }
+    
+    .badge {
+        font-size: 0.6rem;
+    }
+    
+    .subheader {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+    
+    .subheader span {
+        font-size: 0.7rem;
+    }
+    
+    .input-card {
+        padding: 1rem;
+    }
+    
+    .input-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+    
+    .button-bar {
+        justify-content: center;
+    }
+    
+    .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.8rem;
+    }
+    
+    .table-title {
+        font-size: 1rem;
+    }
+    
+    table {
+        font-size: 0.7rem;
+        min-width: 600px;
+    }
+    
+    th, td {
+        padding: 0.4rem 0.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        flex: 1;
+        justify-content: center;
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+    }
+    
+    .button-bar {
+        flex-wrap: wrap;
+    }
+    
+    table {
+        font-size: 0.65rem;
+        min-width: 550px;
+    }
+}
+
+/* Print styles */
+@media print {
+    .input-card, .button-bar, .btn-back, .badge {
+        display: none !important;
+    }
+    
+    body {
+        background: white;
+        padding: 0;
+    }
+    
+    .container {
+        box-shadow: none;
+        padding: 0.2in;
+        background: white;
+    }
+    
+    table {
+        border: 2px solid #333;
+    }
+    
+    th {
+        background: #eaeef2 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
